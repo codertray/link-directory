@@ -7,6 +7,7 @@ body{
     background: linear-gradient(#1ac5eb, #013e98);
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 100%
     min-height: 100dvh;
 }
 
@@ -100,6 +101,7 @@ a{
 .btn{
     font-weight: 500;
     font-size: 1.5rem;
+    width: 100%
     padding: 8px, 4px;
     border-radius: 24px;
 }
@@ -163,7 +165,6 @@ a{
         gap: 3px;
         flex-direction: row;
     }
-    
     .icon> i{
         font-size: 2rem;
     }
