@@ -5,6 +5,7 @@ body{
     text-align: center;
     color: #05260b;
     background: linear-gradient(#1ac5eb, #013e98);
+    background-repeat: no-repeat;
 }
 
 h1{
