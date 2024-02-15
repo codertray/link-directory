@@ -24,6 +24,7 @@ h2{
 
 a{
     text-decoration: none;
+    max-width: 100%;
     color: #05260b;
     padding: 1px;
     border: 6px solid #05260b;
