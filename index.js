@@ -87,7 +87,8 @@ function thanos($element) {
     dusted++;
     if (dusted === 5) {
         alert("Thanos!");
-        if(dusted === 6)
+    }
+    if(dusted === 6) {
         alert("UH OH!!!");
         removeStyling()
     }
