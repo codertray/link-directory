@@ -7,7 +7,6 @@ body{
     background: linear-gradient(#1ac5eb, #013e98);
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 100%
     min-height: 100dvh;
 }
 
@@ -166,7 +165,7 @@ a{
         flex-direction: row;
     }
     .icon> i{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .btn-box{
         flex-direction: column;
