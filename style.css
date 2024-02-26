@@ -1,9 +1,12 @@
 body{
+    --main: #05260b;
+    --secondary: darkgreen;
+    --standard: 10px;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 12pt;
     font-weight: 400;
     text-align: center;
-    color: #05260b;
+    color: var(--main);
     background: linear-gradient(#1ac5eb, #013e98);
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,21 +16,21 @@ body{
 h1{
     font-size: 3rem;
     font-weight: 900;
-    color: darkgreen;
+    color: var(--secondary);
 }
 h2{
     font-size: 1.5rem;
-    margin: 10px;
+    margin: var(--standard);
     font-weight: 700;
-    color: rgb(0, 100, 0);
+    color: var(--secondary);
 }
 
 a{
     text-decoration: none;
     max-width: 100%;
-    color: #05260b;
+    color: var(--main);
     padding: 1px;
-    border: 6px solid #05260b;
+    border: 6px solid var(--main);
 }
 
 .container{
@@ -44,7 +47,7 @@ a{
 
 .card-box{
     display: flex;
-    gap: 10px;
+    gap: var(--standard);
     padding: 5px;
     justify-content: center;
 }
@@ -55,7 +58,7 @@ a{
     min-width: min-content;
     max-width: 400px;
     height: fit-content;
-    padding: 10px;
+    padding: var(--standard);
     background-color: rgba(250, 255, 250, 0.2);
 }
 
@@ -83,8 +86,8 @@ a{
 
 .icon i {
     font-size: 2.5rem;
-    color: #05260b;
-    --fa-border-color: #05260b;
+    color: var(--main);
+    --fa-border-color: var(--main);
     --fa-border-width: 6px;
     --fa-border-radius: 50%;
 }
@@ -120,7 +123,7 @@ a{
 }
 
 .active-btn{
-    background-color: darkgreen;
+    background-color: var(--secondary);
 }
 
 .clicked{
@@ -137,6 +140,35 @@ a{
     all: initial;
 }
 
+/* Skill Page elements */
+#skill-page {
+    font-size: 1.5rem;
+}
+
+#skill-page p {
+    margin: 0px 18px
+}
+#skill-page h1 {
+    font-size: 4.5rem;
+    margin: var(--standard)
+}
+#skill-page h2 {
+    font-size: 2rem;
+}
+.list-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+ul {
+    list-style-type: none;
+}
+.home {
+    border: none;
+    margin: 0px var(--standard)
+}
+
+
 @media (800px <= width <= 1280px) {
     .icon-box{
         grid-template-columns: 1fr 1fr;
@@ -146,7 +178,7 @@ a{
 @media (max-width: 800px) {
     .header{
         flex-direction: column;
-        margin: 5px 10px
+        margin: 5px var(--standard)
     }
     .card{
         max-width: 600px;
@@ -170,4 +202,18 @@ a{
     .btn-box{
         flex-direction: column;
     }
+    .list-box {
+        flex-direction: column;
+    }
+    ul {
+        display: grid;
+        gap: 3px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        margin: 20px 0px;
+        padding: 0px
+    }
+    li {
+        background-color: rgba(250, 255, 250, 0.3);
+    }
 }
+
