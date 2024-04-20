@@ -60,6 +60,7 @@ a{
     height: fit-content;
     padding: var(--standard);
     background-color: rgba(250, 255, 250, 0.2);
+    overflow: none;
 }
 
 .link-list{
